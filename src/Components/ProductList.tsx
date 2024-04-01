@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Tproduct } from '~/interfaces/product'
 import instance from '~/Api'
 import { getAllProducts } from '~/Api/product'
+import { Link } from 'react-router-dom'
 
 const ProductList = () => {
   const [products, setProducts] = useState<Tproduct[]>([])
@@ -17,6 +18,7 @@ const ProductList = () => {
     //   setProducts(data)
     // })()
 
+  
     //cách 3
     const getAllProducts = async () => {
       try {
